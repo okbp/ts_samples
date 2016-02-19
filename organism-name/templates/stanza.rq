@@ -1,0 +1,10 @@
+# organism-name/templates/stanza.rq 
+PREFIX id-tax:<http://identifiers.org/taxonomy/>
+PREFIX ddbj-tax:<http://ddbj.nig.ac.jp/ontologies/taxonomy/>
+
+SELECT ?scientific_name ?rank_name
+WHERE {
+  id-tax:{{tax_id}} ddbj-tax:scientificName ?scientific_name ;
+    ddbj-tax:rank ?rank .
+  ?rank rdfs:label ?rank_name .
+}
