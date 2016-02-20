@@ -9,6 +9,8 @@ Stanza(function(stanza, params) {
     stanza.render({
       template: "stanza.html",
     });
+    //プルダウンリストを初期値の値にセット
+    $(stanza.select('#current_value')).html(stanza.select('#select1').value);
 
     //use plain javascript
     stanza.select('#button1').addEventListener("click", function(e) {
@@ -17,7 +19,8 @@ Stanza(function(stanza, params) {
 
     //use jQuery 
     $(stanza.select('#select1')).on('change', function(e) {
-      alert(stanza.select('#select1').value);
+      $(stanza.select('#current_value')).empty();
+      $(stanza.select('#current_value')).html(stanza.select('#select1').value);
     });
   });
 });
