@@ -1,0 +1,55 @@
+<style>
+table {
+  width: 400px;
+  border: 2px #2b2b2b solid;
+  border-collapse: collapse;
+}
+th {
+  background-color: #ffd78c;
+}
+td, th {
+  border: 2px #2b2b2b solid;
+}
+</style>
+
+<h3>raw_data</h3>
+{{raw_data}}
+<h3>bindings</h3>
+{{bindings_json}}
+<table>
+  <th>s</th>
+  <th>p</th>
+  <th>o</th>
+  {{#each bindings}}
+  <tr>
+    <td>
+      {{s.value}}
+    </td>
+    <td>
+      {{p.value}}
+    </td>
+    <td>
+      {{o.value}}
+    </td>
+  {{/each}}
+</table>
+
+<h3>unwrap</h3>
+{{unwrap_json}}
+<table>
+  <th>s</th>
+  <th>p</th>
+  <th>o</th>
+  {{#each unwrap}}
+  <tr>
+    <td>
+      {{s}}
+    </td>
+    <td>
+      {{p}}
+    </td>
+    <td>
+      {{o}}
+    </td>
+  {{/each}}
+</table>
