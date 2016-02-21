@@ -1,5 +1,6 @@
 //描画用関数 引数に描画対象のelementを指定する
-var draw = (function(elem){
+var MYCHART = {};
+MYCHART.draw = (function(elem){
   var margin = {top: 40, right: 20, bottom: 30, left: 40},
       width = 800 - margin.left - margin.right,
       height = 500 - margin.top - margin.bottom;
