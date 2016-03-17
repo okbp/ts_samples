@@ -1,0 +1,34 @@
+{
+  "@context": {
+    "stanza": "http://togostanza.org/resource/stanza#"
+  },
+  "@id": "redo-stanza",
+  "stanza:label": "Hello Example",
+  "stanza:definition": "Greeting.",
+  "stanza:parameter": [
+    {
+      "stanza:key": "start_pos",
+      "stanza:example": "1",
+      "stanza:description": "Start position.",
+      "stanza:required": true
+    },
+    {
+      "stanza:key": "end_pos",
+      "stanza:example": "50",
+      "stanza:description": "End position.",
+      "stanza:required": true
+    }
+  ],
+  "stanza:usage": "<togostanza-redo-stanza start_pos=\"1\" end_pos=\"50\"></togostanza-redo-stanza>",
+  "stanza:type": "Stanza",
+  "stanza:context": "",
+  "stanza:display": "",
+  "stanza:provider": "provider of this stanza",
+  "stanza:license": "",
+  "stanza:author": "author name",
+  "stanza:address": "name@example.org",
+  "stanza:contributor": [
+  ],
+  "stanza:created": "2016-02-25",
+  "stanza:updated": "2016-02-25"
+}
